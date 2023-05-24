@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alankar - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Searched on google - google fonts --Poppins --link copied and pasted here  -->
+    <!-- Then RC--Command palette--Toggle word wrap--for wraping the link and show to a desired position -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(31, 31, 119);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+
+            list-style-type: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover{
+            color: rgb(178, 178, 226);
+            font-size: 1.01rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+
+        .firstSection>div {
+            /* if we write div like this then whatever properties are we written inside the div should applicable for only  1 div */
+            width: 30%;
+            align-items: center;
+            /* background-color: red; */
+        }
+
+        .leftSection {
+            /* backgrpond red is taken for fixing width of word */
+            /* background-color: red; */
+            font-size: 2rem;
+            margin: 70px;
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(160, 87, 228);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Alankar's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <!-- here our header part is completed , now we are developing our body part, line no 71> we can compremize this -->
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <!-- first we just wrote left here, and right at below position and written a neccessary CSS code for the div elements i.e. width etc. -->
+                <!-- then finally we started developing left and right section by erasing Left and Right words respectively -->
+                Hi, My name is <span class="purple">Alankar</span>
+                <div>and I am a passionate</div>
+                <div>Web Developer</div>
+
+            </div>
+            <div class="rightSection">
+                <img src="Developer.png" alt="">
+
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
